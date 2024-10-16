@@ -1,0 +1,25 @@
+- Explicit wait
+    - Purpose: apply wait cho 1 element cu the, ko apply cho cai driver session
+    - Usage:
+        Step1: new Object WebdriverWait
+        Step2: Goi method until
+        Step3: method until: Dua vao parameter loai By hoac WebElement
+
+- Fluent wait (ko dung nhieu trong thuc te)
+- Customize Explicit wait
+    Step1: Create a class to implement Interface ExpectedCondition
+    Step2: return su dung cac method cua driver
+    Step3: Sau khi goi method until, dua vao new Object cua class vua tao
+
+- Dynamic Control
+    Define parent locators
+    Interact with child locators (narrow down)
+    Apply explicit wait
+
+- Excute JavaScript code
+    * Basic
+    Floating menu
+        + Scroll to bottom
+        + Scroll to top
+    Note: Can casting driver sang datatype JavascriptExecutor
+    * Advance

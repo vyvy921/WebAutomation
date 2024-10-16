@@ -1,0 +1,36 @@
+-Dropdown options
+    Step 1: Xac dinh select locator & element
+    Step 2: Goi class Select tu method support ui
+    Step 3: Su dung strategy to find select
+        - 1. Select by visible text
+        - 2. Select by index
+        - 3. Select by value
+
+- Customize select class
+    Create a class extend parent class
+    Create a constructor
+    Create a method(s)
+
+- iFrame
+    - Exception: no such element: Unable to locate element (do co 1 html document nam trong parent html document)
+
+
+-Mouse hover
+
+- Narrow down searching
+    C1: multiple matching
+        How: Create a List then loop over this list, access to each index to call the element
+        Disadvantage: difficulty to maintenance
+    C2: Tim list cua parent element
+        Check null
+        Loop over parent element from element (use element.findElement() |NOT driver.findElement())
+        Define an Action object
+        Mouse over/ loop over each element
+
+- JavaScript Alert
+    - Expectation: get content, click button, input field
+    - Usage: khong dung driver.findElement, ma su dung wait
+    - Step 1: Tao object WebElement, Alert, WebDriverWait
+    - Step 2: find Element locator
+    - Step 3: Click on Element
+    - Step 4: Use wait
