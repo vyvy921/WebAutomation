@@ -2,13 +2,33 @@
 - what: is a technique to convert a page/ particular page into a class
 - purpose: reuse logic (maintenance element)
 
-** Traditional POM
+** Traditional POM - type 1
     1. Create a class page
     1.1. Define css Selector element (static = dung chung), WebElement (tuong tac voi element, final: ko thay doi driver)
     1.2. Create a constructor
-    1.3. Create object getter for element. Return findElement
+    1.3. Introduce service method (return) object getter for element. Return  tim duoc tren page
 
     2. Usage
     2.1. Create a class to use POM
-    2.2. Create a POM instance
-    2.3. Call POM
+    2.2. Innit class LoginPage (new object)
+    2.3. Call element in page object
+
+** Type 2
+    - Issue: type 1 phai goi di goi lai sendkey, click nhieu lan
+    - Expected: 1 element lam 1 viec do luon. Vd jkhi goi longinBtn la se click vao nut login luon
+
+    1. Create a class page
+    1.1, 2. the same
+    1.3. Introduce interaction method (void)
+
+
+** Type 3
+    - How: xem theo tung component (Vd Header, Footer, Left sidebar, Section, Login form, List item), ko phai theo element
+    - Expected: tao ra component chua cac element, dung de reuse cho cac page khac
+
+    1. Create a class LoginComponent
+    1.1. Define cac Element
+    2. Create a class LoginPageModel
+    2.1. Introduce service method, return LoginComponent
+
+**
