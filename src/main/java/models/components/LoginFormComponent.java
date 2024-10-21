@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+@ComponentCssSelector(value = "#login")
 public class LoginFormComponent {
 
     private final WebDriver driver;

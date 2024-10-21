@@ -39,4 +39,11 @@
 
     * Ky thuat dua vao parameter la kieu Class
     Tao Object -> can co Constructor -> Xac dinh kieu du lieu cho Constructor
+    1. Tao parameter cho Constructor (chua xac dinh kieu du lieu nao -> dung Class<?>)
+    2. Tao Constructor bang ki thuat phan chieu reflection, getConstructor tu class loginPageClass
+    3. Khoi tao/Init object tu constructor
 
+** Annotation
+    - Purpose:
+    - Retention: thoi diem annotation duoc thuc thi. (runtime, ...)
+    - Target: scope apply
