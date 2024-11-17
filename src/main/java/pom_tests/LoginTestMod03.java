@@ -17,6 +17,7 @@ public class LoginTestMod03 {
             driver.get(Urls.urlBase.concat(Urls.loginSlug));
 
             LoginPageMod03 loginPage = new LoginPageMod03(driver);
+
             loginPage.loginFormComp().inputUsername("username3");
             loginPage.loginFormComp().inputPassword("12345");
             loginPage.loginFormComp().clickLoginBtn();

@@ -29,8 +29,4 @@ public class LoginPageMod02 {
         driver.findElement(loginBtn).click();
     }
 
-    public WebElement loginBtn() {
-        return driver.findElement(loginBtn);
-    }
-
 }

@@ -16,5 +16,7 @@ public class LoginPageMod03 {
         return new LoginFormComponent(driver);
     }
 
+    // introduce component 2,....
+
 
 }
