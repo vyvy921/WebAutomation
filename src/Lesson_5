@@ -36,7 +36,7 @@
 
 ** Generic type
     - Type co boundary: <T extends LoginPage> void Login(class<T> loginPageClass) gioi han kieu dua vao
-        parameter dau vao la dang Class (class<T> loginPageClass) -> la template, ko tao dc method
+        parameter dau vao la dang Class (class<T> loginPageClass) -> la template/ class generic, ko tao dc method
         parameter dau vao la dang Generic type (T loginPageClass) -> la dang object generic, tao dc method
     - Type khong boundary:
 

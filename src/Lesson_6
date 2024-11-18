@@ -1,0 +1,4 @@
+** Tao concrete class Cha Component chua:
+    - WebDriver, WebElement, WebDriverWait
+    - constructor
+    - 4 method: findElement(s), findComponent(s)
