@@ -6,3 +6,5 @@
 2. Khac biet giua Implicit wait va Explicit wait
     - Implicit wait: apply cho toan bo driver session khi tim 1 element
     - Explicit wait: apply cho rieng 1 element, override implicit wait
+
+3. Khi nao dung throw new RunTimeException
