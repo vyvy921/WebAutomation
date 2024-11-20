@@ -8,3 +8,5 @@
     - Explicit wait: apply cho rieng 1 element, override implicit wait
 
 3. Khi nao dung throw new RunTimeException
+
+4. Cach tao method return ve 1 object, 1 list object
