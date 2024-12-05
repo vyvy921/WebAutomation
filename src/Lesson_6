@@ -2,3 +2,12 @@
     - WebDriver, WebElement, WebDriverWait
     - constructor
     - 4 method: findElement(s), findComponent(s)
+
+** Tao footer component
+
+** Scenario Analyzing
+Top-down strategy
+UI/layout: global components, mandatory components
+Functionality: e2e flow
+
+Purpose of automation test: support to confirm the build as soon as possible
