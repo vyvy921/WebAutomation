@@ -50,7 +50,8 @@
     4. Goi phuong thuc login() tren doi tuong da tao
 
 ** Annotation
-    - Purpose:
+    - Purpose: tao mot component annotation de define 1 cssSelection cho component. Sau nay tim component thogn qua
+    Annotation, chu khong phai tim Element nua
     - Retention: thoi diem annotation duoc thuc thi. (runtime, compile time...)
     - Target: scope to apply (Ex. Element.TYPE : apply o tren claa)
     - Syntax: public @interface Annotation

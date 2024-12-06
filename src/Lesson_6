@@ -1,3 +1,8 @@
+** Xem 1 page duoc cau thanh tu cac Component
+- Component Header:
+- Component Footer:
+- Component LeftSidebar:
+
 ** Tao concrete class Cha Component chua:
     - WebDriver, WebElement, WebDriverWait
     - constructor

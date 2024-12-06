@@ -13,7 +13,7 @@ public class Component {
     protected WebElement component;
     protected WebDriverWait wait;
 
-    public Component(WebDriver driver, WebElement component {
+    public Component(WebDriver driver, WebElement component){
         this.driver = driver;
         this.component = component;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -32,7 +32,14 @@ public class Component {
         return findComponents(classComponent, driver).get(0);
     }
 
-    public <T> List<T> findComponents(Class<T> classComponent, WebDriver driver) {
+    public <T extends Component> List<T> findComponents(Class<T> classComponent, WebDriver driver) {
+        String cssSelector;
+        try {
+            classComponent.getAnnotation(ComponentCssSelector.class).value();
+        }catch (Exception e){
+            throw new IllegalArgumentException("[Err] Component must have Annotation");
+        } //component quen de Annotation
+
         return null;
     }
 
