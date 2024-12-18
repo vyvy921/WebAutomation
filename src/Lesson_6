@@ -16,3 +16,9 @@ UI/layout: global components, mandatory components
 Functionality: e2e flow
 
 Purpose of automation test: support to confirm the build as soon as possible
+
+Step to build a Component
+1. Create class Component
+2. Create class BasePage (khi tim element thi can bat dau tu <html>)
+3. Create package global: De chua cac component thuong su dung
+4. Create class FooterComponent

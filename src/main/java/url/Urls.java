@@ -9,4 +9,5 @@ public interface Urls {
     String loginSlug = "/login";
     String dynamicControlSlug = "/dynamic_controls";
     String floatingMenuSlug = "/floating_menu";
+    String demoBaseUrl = "https://demowebshop.tricentis.com/";
 }
