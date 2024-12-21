@@ -1,0 +1,24 @@
+Day 1:
+- Variable: ten vung nho/Alias trong ram | int number
+- Declare a variable: khai bao ten 1 vung nho trong ram, chua 1 kieu du lieu | int number or int number = 0
+- Assign, reassign: gan, gan lai gia tri/value cho ten vung nho/bien/variable | number = 1, number = 2
+Day 2:
+- Operator: Arithmetic(+-*/), Comparision (><=) return true/false, logical (and or not), assignment(= += -+)
+- Ternary operation: toan tu 3 ngoi. String msg, boolean isOnTime. msg = isOnTime ? "go" : "not"
+- Bitwise operator: vi sao && || ma khong phai & |. Thuc hien phep toan tren tung bit. It performs operation in each individual bit
+- Nested if..else | if...else if..else if...else.
+- Cach chay chuong trinh: int total = num1 + num2 | tinh toan ben phai, sau do gan vao variable ben trai
+- Debug: chay chuong trinh voi muc dich phat hien va sua loi, tao 1 breakpoint
+Day 3:
+* ForLoop. Chu y 3 gia tri for (init_value, condition, conditional_change_trigger){ //execute sth if true}
+ - Infinitive loop. for( ; ; ){}
+* Enhance for. Dung de lay du lieu ra, ma khong thay doi index trong array for (int num : numberArr)
+* Control keyword: break, continue
+* WhileLoop. while(true){ do sth}
+* Array. 1 tap hop cua nhieu vung nho lien tiep chua cung 1 kieu du lieu. is a data structure that stores a collection of elements of the same data type. Element in array has the same type
+Array has a fixed length
+ - Declare an array: int[] numbers, int numbers[]
+                     int[] numbers = new int[5]
+
+ - Truy cap index: numbers[0]
+                   numbers[1]
