@@ -2,6 +2,7 @@ Day 1:
 - Variable: ten vung nho/Alias trong ram | int number
 - Declare a variable: khai bao ten 1 vung nho trong ram, chua 1 kieu du lieu | int number or int number = 0
 - Assign, reassign: gan, gan lai gia tri/value cho ten vung nho/bien/variable | number = 1, number = 2
+
 Day 2:
 - Operator: Arithmetic(+-*/), Comparision (><=) return true/false, logical (and or not), assignment(= += -+)
 - Ternary operation: toan tu 3 ngoi. String msg, boolean isOnTime. msg = isOnTime ? "go" : "not"
@@ -9,12 +10,15 @@ Day 2:
 - Nested if..else | if...else if..else if...else.
 - Cach chay chuong trinh: int total = num1 + num2 | tinh toan ben phai, sau do gan vao variable ben trai
 - Debug: chay chuong trinh voi muc dich phat hien va sua loi, tao 1 breakpoint
+
 Day 3:
 * ForLoop. Chu y 3 gia tri for (init_value, condition, conditional_change_trigger){ //execute sth if true}
+ - When: khi biet so lan lap nhat dinh
  - Infinitive loop. for( ; ; ){}
 * Enhance for. Dung de lay du lieu ra, ma khong thay doi index trong array for (int num : numberArr)
 * Control keyword: break, continue
 * WhileLoop. while(true){ do sth}
+ - When: chua biet so lan lap, muon lam it nhat 1 lan. do{sth} while(sth is true) or while (sth is true) {do sth}
 * Array. 1 tap hop cua nhieu vung nho lien tiep chua cung 1 kieu du lieu. is a data structure that stores a collection of elements of the same data type. Element in array has the same type
 Array has a fixed length
  - Declare an array: int[] numbers, int numbers[]
@@ -22,3 +26,16 @@ Array has a fixed length
 
  - Truy cap index: numbers[0]
                    numbers[1]
+
+Day 4:
+* Switch case
+ - When switch case: xac dinh cho chinh xac 1 gia tri
+ - When else-if: xac dinh cho 1 khoang/range
+ - syntax: switch (enum){
+                case 1: break;
+                case 2: break;
+                default: }
+* Function
+  - Purpose: Maintenance, Extendable, Reliable, adhere to/comply with DRY
+  - syntax: access modifier (public, protected, private) class method (static) return type (void or data type) function_name(parameters){}
+        function_name(teo, ti, tun): Argument, gia tri luc dua vao.
