@@ -17,7 +17,7 @@ Day 3:
  - Infinitive loop. for( ; ; ){}
 * Enhance for. Dung de lay du lieu ra, ma khong thay doi index trong array for (int num : numberArr)
 * Control keyword: break, continue
-* WhileLoop. while(true){ do sth}
+* WhileLoop. while(true){ do sthgti}
  - When: chua biet so lan lap, muon lam it nhat 1 lan. do{sth} while(sth is true) or while (sth is true) {do sth}
 * Array. 1 tap hop cua nhieu vung nho lien tiep chua cung 1 kieu du lieu. is a data structure that stores a collection of elements of the same data type. Element in array has the same type
 Array has a fixed length
@@ -37,5 +37,22 @@ Day 4:
                 default: }
 * Function
   - Purpose: Maintenance, Extendable, Reliable, adhere to/comply with DRY
-  - syntax: access modifier (public, protected, private) class method (static) return type (void or data type) function_name(parameters){}
+  - Syntax: access modifier (public, protected, private) class method (static) return type (void or data type) function_name(parameters){}
         function_name(teo, ti, tun): Argument, gia tri luc dua vao.
+        public void function_String(){}
+        public static String function_String_2(int number){return "A String"}
+  - Keyword:
+        return: thoat ra khoi vong lap, dung lai method, khong thuc thi cac statement phia sau
+
+* ArrayList
+ - ArrayList implements interface List
+ - Declare:
+        ArrayList myList = new ArrayList(); //ArrayList: raw type. myList co the dung duoc nhieu loai du lieu. VD: myList.add(10), myList.add("Teo"), myList.add(true)
+        ArrayList<Integer> myList = new ArrayList<>(); //Generic type. Java collection khong chap nhan primary type, chi chap nhan Wrapper type
+        List<Integer> myList = new ArrayList<>(); //do co cac method return List, su dung tinh polymorphism
+        List<Integer> myList2 = Arrays.asList(1,2,3); //tao ra 1 list co dinh, co 3 elements, khong thay doi so luong cac phan tu trong do nua
+ - Method of ArrayList
+        add(), set(), for (index, .size, index++), enhance for
+        .isEmpty() return boolean, .contains return boolean, indexOf
+Day 5:
+ -Dot notation

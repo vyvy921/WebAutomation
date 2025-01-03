@@ -11,4 +11,9 @@
 
 4. Cach tao method return ve 1 object, 1 list object
 
-5.
+5. Lam the nao de goi 1 method?
+    - Using dot notation (.) to call a method
+
+6. Phan biet break, continue, return trong vong lap/loop, method
+    Khi dung return trong vong loop se ket thuc vong loop + method. Khong thuc thi cac statement phia sau.
+    Cao2$12202!
