@@ -16,4 +16,5 @@
 
 6. Phan biet break, continue, return trong vong lap/loop, method
     Khi dung return trong vong loop se ket thuc vong loop + method. Khong thuc thi cac statement phia sau.
-    Cao2$12202!
+
+7. Phan biet ArrayList, Set, Map
