@@ -56,3 +56,7 @@ Day 4:
         .isEmpty() return boolean, .contains return boolean, indexOf
 Day 5:
  -Dot notation
+* Set
+ - How: remove duplicated, automatically sorted
+
+* Map

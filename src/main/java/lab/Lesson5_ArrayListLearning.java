@@ -1,7 +1,9 @@
 package lab;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Lesson5_ArrayListLearning {
     public static void main(String[] args) {
@@ -12,14 +14,14 @@ public class Lesson5_ArrayListLearning {
         myArrList.add(4);
         myArrList.add(4);
         myArrList.add(4);
-//        myArrList.add(1);
-//        myArrList.add(2);
-//        myArrList.add(3);
-//        myArrList.add(4);
-//        myArrList.add(4);
-//        myArrList.add(4);
-//        myArrList.add(6);
-//        myArrList.add(8);
+        myArrList.add(1);
+        myArrList.add(2);
+        myArrList.add(3);
+        myArrList.add(4);
+        myArrList.add(4);
+        myArrList.add(4);
+        myArrList.add(6);
+        myArrList.add(8);
         myArrList.add(6);
         myArrList.add(5);
 
@@ -27,7 +29,7 @@ public class Lesson5_ArrayListLearning {
           if soLe -> + 1
           if sochang -> continue
          */
-            System.out.println("Before");
+        System.out.println("Before");
         System.out.println(myArrList);
 
         for (int index = 0; index < myArrList.size(); index++) {
@@ -35,7 +37,7 @@ public class Lesson5_ArrayListLearning {
                 myArrList.set(index, myArrList.get(index) + 1);
         }
 
-            System.out.println("After");
+        System.out.println("After");
         System.out.println(myArrList);
 
         /* remove so 4
@@ -45,7 +47,7 @@ public class Lesson5_ArrayListLearning {
         * */
 
         for (int index = 0; index < myArrList.size(); index++) {
-            if (myArrList.get(index) == 4){
+            if (myArrList.get(index) == 4) {
                 myArrList.remove(index);
                 index--;
             }
@@ -56,14 +58,15 @@ public class Lesson5_ArrayListLearning {
         System.out.println(myArrList.indexOf(2));
 
         get3MinValue();
+        hashSet();
     }
 
-    public static void get3MinValue(){
+    public static void get3MinValue() {
         /*
-        * arrange from min -> max
-        * filter duplicated values
-        * get 3 firsts values
-        * */
+         * arrange from min -> max
+         * filter duplicated values
+         * get 3 firsts values
+         * */
         List<Integer> myArr = new ArrayList<>();
         myArr.add(3);
         myArr.add(1);
@@ -82,7 +85,7 @@ public class Lesson5_ArrayListLearning {
         int min, tmp;
         for (int indexSorted = 0; indexSorted < myArr.size(); indexSorted++) {
             for (int indexUnsorted = indexSorted + 1; indexUnsorted < myArr.size(); indexUnsorted++) {
-                if (myArr.get(indexUnsorted) < myArr.get(indexSorted)){
+                if (myArr.get(indexUnsorted) < myArr.get(indexSorted)) {
                     min = myArr.get(indexUnsorted);
                     tmp = myArr.get(indexSorted);
                     myArr.set(indexSorted, min);
@@ -107,8 +110,37 @@ public class Lesson5_ArrayListLearning {
             }
         }
 
-
         System.out.println(filteredList);
+    }
+
+    public static void hashSet() {
+
+        List<Integer> myArrList = new ArrayList<>();
+        myArrList.add(4);
+        myArrList.add(2);
+        myArrList.add(1);
+        myArrList.add(4);
+        myArrList.add(4);
+        myArrList.add(1);
+        myArrList.add(2);
+        myArrList.add(3);
+        myArrList.add(4);
+        myArrList.add(2);
+        myArrList.add(8);
+        myArrList.add(6);
+        myArrList.add(5);
+
+        System.out.println("ArrayList ");
+        System.out.println(myArrList);
+
+        Set<Integer> mySet = new HashSet<>(myArrList);
+        System.out.println("Hashset ");
+        System.out.println(mySet);
+
+        List<Integer> listSet = new ArrayList<>(mySet);
+        System.out.println("List of Set");
+        System.out.println(listSet);
+        System.out.println(listSet.subList(0,3));
     }
 
 }
