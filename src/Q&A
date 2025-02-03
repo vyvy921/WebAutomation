@@ -19,5 +19,13 @@
 
 7. Cac loai Collection
  - List: ArrayList
+    Declare: List<Object> arrList = new ArrayList<>()
+    Methods: CRUD
  - Set: HashSet
- - Map
+    Declare: Set<Object> setList = new HashSet<>()
+ - Map: HashMap
+    Syntax: Using a couple/entry Key, Value
+    Declare: Map<Object key, Object Value> mapList = new HashMap<>()
+    Print: lay tung key: mapList.keySet() -> return Set
+            in tung key: get.(key).sout | Dung enhance for, loop qua tung key
+    Methods: replace(key, value), remove(key, value)
