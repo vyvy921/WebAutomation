@@ -28,4 +28,8 @@
     Declare: Map<Object key, Object Value> mapList = new HashMap<>()
     Print: lay tung key: mapList.keySet() -> return Set
             in tung key: get.(key).sout | Dung enhance for, loop qua tung key
-    Methods: replace(key, value), remove(key, value)
+    Methods:
+        replace(key, value): Vao Key, update thanh value
+        replace(key, oldValue, newValue): Vao key, tim gia tri "oldValue", neu co thi update thanh "newValue"
+        remove(key, value)
+    Moi mot Key tuong ung voi 1 value cuoi cung ma no duoc nhan
