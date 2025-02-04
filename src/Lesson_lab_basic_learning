@@ -58,6 +58,9 @@ Day 5:
  -Dot notation
 * Set
  - How: remove duplicated, automatically sorted
+* Map (xem Q&A)
+* String
+ - Declare:
+    Literal declaration: String name = "Teo"; (Literal declaration = Khai báo biến bằng cách gán trực tiếp một giá trị cố định)
+    String Object declaration: String name = new String("Teo")
 
-* Map
- Q&A

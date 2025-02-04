@@ -74,6 +74,12 @@ public class Lesson5_MapLearning {
     }
 
     static void concurrentModificationException(){
+        /**Nguyen nhan: khi duyet danh sach, Java su dung Iterator ngam, nen khi xoa 1 phan tu ra khoi danh sach
+         * Iterator van giu tham chieu den dsach cu, kiem Iterator ktra ptu tiep theo thi se phat hien ra dsach da bi
+         * thay doi ma khong thong qua Iterator, nen se mem ra ConcurrentModificationException
+        */
+        //Iterator: la 1 interface, giong nhu con tro duyet danh sach
+        //Khac phuc: chuyen sang Iterator va remove qua entry cua Itorator do
 
     }
 }

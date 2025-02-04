@@ -2,6 +2,7 @@
     - No such element: loi ko tim thay Element do locator bi thay doi, hoac page chua load kip nen element chua xuat hien
     - Timeout Exception: khi dung Explicit wait de cho 1 doi tuong, neu sau khoang thoi gian do van chua tim thay thi se
         xuat hien loi Timeout chu khong phai No such Element
+    - ConcurrentModificationException: gap khi vua loop, vua remove 1 phan tu cua kieu Map
 
 2. Khac biet giua Implicit wait va Explicit wait
     - Implicit wait: apply cho toan bo driver session khi tim 1 element
