@@ -54,6 +54,7 @@ Day 4:
  - Method of ArrayList
         add(), set(), for (index, .size, index++), enhance for
         .isEmpty() return boolean, .contains return boolean, indexOf
+        .subList
 Day 5:
  -Dot notation
 * Set
@@ -63,4 +64,21 @@ Day 5:
  - Declare:
     Literal declaration: String name = "Teo"; (Literal declaration = Khai báo biến bằng cách gán trực tiếp một giá trị cố định)
     String Object declaration: String name = new String("Teo")
+ - String la imutable Object: khong thay doi duoc value cua no. Nen khi dung ham replace, trim,... thi no se clone object ra cho khac va thay doi gia tri,
+   nhung khong return ket qua. Vi the de dung replace(), trim() ta se tao 1 String khac de chua dung
+ - Method:
+    .replace()
+    .trim()
+    .subString(): return String. cat chuoi (cat tu dau chuoi, hoac cat giua chuoi). Syntax: lay tu index.. den index... (exclude).
+    .indexOf(): return index dau tien cua 1 ki tu/chuoi nao do
+    .contains: return boolean
+    .split(): dua vao condition, return cac doan String
+    .valueOf(): return String /Interger/ Object (wrapper class)
+    .removeAll(): Loai bo theo 1 quy luat nao do, RelugarExpression |Regex []set [^]not ^start -fromTo |or $end ()group .anyExceptNewline *0orMore +1orMore ?0or1
+    .sout("chuoi" + 12 + 3): return chuoi123 : day la noi chuoi chu khong phai tinh toan
+    .sout("chuoi" + (12 + 3)): return chuoi15 : tinh toan
+    .concat(): return String
+ StringBuilder
+   Tang performance de xu ly cac chuoi
 
+Day 6
