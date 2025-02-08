@@ -34,7 +34,5 @@ public class Lab_learning {
 
             System.out.println(index);
         }
-
-Object
     }
 }
