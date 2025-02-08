@@ -34,3 +34,20 @@
         replace(key, oldValue, newValue): Vao key, tim gia tri "oldValue", neu co thi update thanh "newValue"
         remove(key, value)
     Moi mot Key tuong ung voi 1 value cuoi cung ma no duoc nhan
+
+8. Class, Object la gi?
+    Class la mot template/blueprint/ ban thiet ke dung de thiet ke ra 1 cai gi do/Object
+    Object/Instance la mot doi tuong cu the cua ban thiet ke/Class
+
+9. Lam sao de tao ra mot Object?
+    Tao Object tu ban thiet ke/Class thong qua tu tu khoa new de goi Contructor cua no
+    Sau khi da co Object duoc tao ra, tu thong qua object do se goi cac .method() tuong ung
+
+10. Phan biet Functional Programming va Object Programming
+    FP: tra loi cho cau hoi What to solve? Quan tam function nay giai quyet van de gi? dau vao la gi, dau ra la gi?
+
+11. Phan biet Overloading va Overridding
+
+12. Khac biet Functional Programmung va OOP - Inheritance
+    Functional: reuse ve logic
+    Inheritance: reuse ve mat design

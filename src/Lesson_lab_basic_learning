@@ -78,7 +78,63 @@ Day 5:
     .sout("chuoi" + 12 + 3): return chuoi123 : day la noi chuoi chu khong phai tinh toan
     .sout("chuoi" + (12 + 3)): return chuoi15 : tinh toan
     .concat(): return String
- StringBuilder
-   Tang performance de xu ly cac chuoi
+ - StringBuilder
+    why: Tang performance de xu ly cac chuoi
+ - So sanh 2 String: dung tu khoa .equals
 
-Day 6
+Day 6:
+* Q&A 8, 9
+*
+    .toString() dung de hien thi khi dung sout. Neu 1 doi tuong khong co thi se goi toString cua Object
+* Method signature: se chu y vao method name, parameter(so luong, loai): cung so luong, cung loai || cung so luong, khac access modifier or return type
+* Method Overloading: la mot ki thuat thiet ke ham. Trong do co 2 hay nhieu method trung ten nhau nhung khac nhau ve parameter
+                    + khac parameter: nghia la khac so luong || khac kieu du lieu
+    when: khi co dung cach xu ly logic, nhung khac du lieu dau vao/khac argument
+    xuat hien tai thoi diem compile time. Vi luc do compiler cua Java phai phan biet cac method signature
+    neu parameter hau nhu giong nhau thi dung Rest parameters/Varagrs. Rest parameters: Nhung phan con lai la 1 array cua cac data type giong nhau
+    Ex: int sum(int a, int b, ...numbers){logic return int}
+        void chuoi(String...chuoi){logic }
+* Method overriding:
+    xuat hien tai thoi diem run time. Khi object duoc tao ra
+
+* Constructor
+    + class field/global variable: se co default value. Ex: int = 0, String = null
+        cac method sinh ra la de xu li cac attribute cua object nay
+    + local variable trong Constructor khong co default value. Nen khi declare can phai init value
+        this.name = name : su dung value ma user nhap de dua cho object dung
+    + overloading cua Constructor: tao nhieu Constructor voi parameter khac nhau
+    + default Constructor: Neu khong tao Constructor thi vao thoi diem runtime jave compiler se tu sinh ra 1 default Constructor rong
+
+Day 7:
+* Concept Person
+    class Person has
+        attribute/class field: name, age
+        Constructor()
+        getter(): return ra value cua attribute (name, age)
+        setter(): dung de thay doi value cua attribute (name, age) ben trong 1 object
+
+    tao object/ doi tuong cu the
+        Person teo = new Person()
+            teo: reference type
+            new: keyword de tao 1 vung nho
+
+* MVC
+    Model: de design model can phai detect/xac dinh duoc cac attribute
+    View
+    Controler: noi xu ly model
+
+* Concept RobotCat
+    class RobotCat: supper class/ parent class
+    class BatteryRobotCat: sub-class/ child class/ concrete class
+
+    + Inheritance: khi mot class dung lai attribute va method cua 1 class khac
+        keyword: extends
+        access modifier: protected
+        usage: RobotCat meo = new BatteryRobotCat();
+        Reuse ve mat logic cua supper class
+        Reuse ve mat design: su dung ki thuat overriding, dung de viet lai logic cua supper class
+            @Override: method signature giong nhau, khac nhau ve logic
+                keyword: super.method()/attribute
+
+    class Grandpa
+        level: concrete class finds&runs from local > Parent > Grandpa > Object

@@ -81,9 +81,12 @@ public class Lesson5_MapLearning {
         */
         //Iterator: la 1 interface, giong nhu con tro duyet danh sach
         //Khac phuc: chuyen sang Iterator va remove qua entry cua Itorator do
+<<<<<<< HEAD
 
         String time = "105mins";
         System.out.println(time.replaceAll("[^0-9]", ""));
+=======
+>>>>>>> 2b0a67e (day 5)
     }
 
 }
