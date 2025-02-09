@@ -131,10 +131,22 @@ Day 7:
         keyword: extends
         access modifier: protected
         usage: RobotCat meo = new BatteryRobotCat();
-        Reuse ve mat logic cua supper class
-        Reuse ve mat design: su dung ki thuat overriding, dung de viet lai logic cua supper class
+        + Reuse ve mat logic cua supper class: su dung lai cac function
+        + Reuse ve mat design: su dung ki thuat overriding, dung de viet lai logic cua supper class
             @Override: method signature giong nhau, khac nhau ve logic
                 keyword: super.method()/attribute
 
     class Grandpa
         level: concrete class finds&runs from local > Parent > Grandpa > Object
+
+Day 8:
+* Constructor cua sub-class: neu class Cha khong co Constructor default, thi sub-class phai tao Constructor goi Constructor cua Cha
+
+* Reuse design - Inheritance
+    + xuat hien moi quan he is a relationship
+    + co Controller de giai quyet ve mat design
+        Controller: noi de xu ly nhung loai du lieu thuoc ve model do minh tao ra
+        void controllerMethod(List<Object Cha>){} //dung mindset functional programming
+    + Cha name = new Con() : Cha name: ten vung nho co kieu du lieu Cha; new Con(): tao vung nho kieu Con
+
+
