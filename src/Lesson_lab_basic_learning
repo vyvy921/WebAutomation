@@ -149,4 +149,24 @@ Day 8:
         void controllerMethod(List<Object Cha>){} //dung mindset functional programming
     + Cha name = new Con() : Cha name: ten vung nho co kieu du lieu Cha; new Con(): tao vung nho kieu Con
 
+* static
+    Bai toan: Tao 1 danh sach chua nhieu con dog, moi lan tao 1 con dog se co stt tu tang. Vd dog 1, 2, 3, ...
+    Solution:
+        (1): static int dogID : class variable, duoc dung cho cho tat ca cac object duoc tao ra tu class/template nay | SHARED VALUE
+             public Dog(){ dogID++} : tao constructor, moi lan object dog moi duoc tao, dogID + 1
+        problem: moi lan object duoc tao ra, se thay doi class variable/ bien duoc dung chung cho tat ca object
+        (2): int dogID : attribute cua object, moi object sinh ra se mang attribute nay
+            public Dog(){ dogID++
+        problem: tao 2 object, ca 2 deu la dogID = 1
+    Khi nao dung static: khi muon dua vao 1 su thay doi chung, de thay doi cac object. Dung trong cac utility
+                         khi variable do khong thay doi, chi dung de refer. VD: locator
+    keyword static:
+        + static: class members la cac method, variable/attribute co keyword static.
+                  Se thuoc class level, duoc sinh ra truoc khi object duoc sinh ra
+                  khong can khoi tao object, van co the goi duoc class method, class variable. VD: Dog.id, Dog.find()
+        + non-static: cac method, attribute thuoc object level
+                  phai sinh ra object moi dung duoc. VD: Dog dog = new Dog(); dog.name || new Dog();
+Lab 8: (7.1, 7.2)
+    + Design: thiet ke model
+    + Xu ly: Viet logic cho Controller
 

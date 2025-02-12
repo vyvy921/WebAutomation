@@ -46,8 +46,22 @@
 10. Phan biet Functional Programming va Object Programming
     FP: tra loi cho cau hoi What to solve? Quan tam function nay giai quyet van de gi? dau vao la gi, dau ra la gi?
 
-11. Phan biet Overloading va Overridding
+11. Phan biet Overloading va Overridding (Day 7)
+    + Overloading: xuat hien o thoi diem compile time
+    + Overriding: xuat hien o thoi diem run time
+                  method() giong het class Cha
+                  khi muon reimplement method o ben trong, thay doi logic o ben trong
+                  Reuse ve mat logic, va ca design
 
-12. Khac biet Functional Programmung va OOP - Inheritance
+12. Khac biet Functional Programming va OOP - Inheritance
     Functional: reuse ve logic
     Inheritance: reuse ve mat design
+
+13. Khi nao dung static? Dung ntn? (day 8)
+
+14. Co override duoc class member khong? (day 8)
+    class method: khong
+          Reason: ngu canh cua override la dung de viet lai logic cho 1 object, doi voi class method la method truc thuoc class nen khong the viet lai logic
+    class variable: dung static block de override
+                    {static variable = "new variable"}
+                    nhung value van duoc share, nen cac object tiep theo se overide len object truoc do, va tat ca cac object cung refer ve class variable nay
