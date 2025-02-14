@@ -184,5 +184,36 @@ Day 9
     + Giai quyet van de gi?
 
 * Builder Design pattern
-    + Context: Bai toan xay nha - Nguoi chu nha muon thay doi cac attribute (color, mainDoors, topRoof,...)
-               VD: thay doi color mainDoor, color topRoof, mainDoor, ... luc the nay luc the kia. Luc default luc thi chinh sua
+    + Context: Bai toan xay nha - Nguoi chu nha muon thay doi cac attribute (color, mainDoors, topRoof,...) tuy y, moi nguoi chu nha lai muon thay doi nung cap attribute khac nhau
+               VD: thay doi color mainDoor, color topRoof, mainDoor, ... luc the nay luc the kia. Nguoi muon default, nguoi thi muon chinh sua
+    + Solution:
+        (1): tao nhieu loai Contructor() => problem: qua nhieu to hop, code dai dong, can rat nhieu overloading Contructor
+        (2): viet logic trong Contructor. VD if (color != null){setCollor},... => problem: khi co nhieu attribute can phai dua vao rat nhieu value
+             hoac cac gia tri default giong nhau thi nhap value cho param rat de bi nham lan va kho hieu
+        (3): tao Contructor() rong, sau do tao cac setter() cho attribute, khi nao can sua attribute nao thi goi setter() do
+             => OK. Nhung chua phai la immutable object
+                Inmmutable object: read-only. Object tao ra khong the sua doi
+                => Dung Builder Design Pattern
+    + Idea:
+        Doi Customer: lay hop dong, yeu cau dua cho doi Constructor. Dung ki thuat Inner Class
+            (Inner class: class chi co y nghia khi nam trong outer class)
+        Doi Constructor: thuc thi. Nhan vao ban hop dong
+    + Syntax:
+        attribute
+        //Constructor
+        protected House(Builder builder){
+            this.attribute = builder.attribute
+        }
+
+        //Read-only
+        getter()
+
+        //Inner class
+        public static class Builder(){  //Dung static de goi nhanh tu ben ngoai, giong nhu 1 class membergi
+        attribute
+        setter(){} //write-only
+        House builder(){return new House(this)}
+        }
+
+*Method chaining: Ki thuat viet method
+
