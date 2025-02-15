@@ -181,7 +181,7 @@ Day 9
 
 * Design pattern
     + La gi? Nhung y tuong de giai quyet van de. La nhung idea, design model de giai quyet bai toan
-    + Giai quyet van de gi?
+    + Can dat  cau hoi cho 1 design pattern: Giai quyet van de gi?
 
 * Builder Design pattern
     + Context: Bai toan xay nha - Nguoi chu nha muon thay doi cac attribute (color, mainDoors, topRoof,...) tuy y, moi nguoi chu nha lai muon thay doi nung cap attribute khac nhau
