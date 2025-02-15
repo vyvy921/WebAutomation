@@ -1,6 +1,6 @@
-package lab.lab7_2;
+package lab.lab10_2;
 
-public class Animal {
+public abstract class Animal {
     protected String name;
     protected int speed;
 
@@ -20,6 +20,9 @@ public class Animal {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+
+    //Create abstract method speed() return random speeds
+    public abstract int speed();
 
     @Override
     public String toString() {

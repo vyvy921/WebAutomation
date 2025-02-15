@@ -1,4 +1,4 @@
-package lab.lab7_2;
+package lab.lab10_2;
 
 import java.util.List;
 

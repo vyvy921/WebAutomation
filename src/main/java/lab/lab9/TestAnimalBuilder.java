@@ -1,6 +1,5 @@
-package lab.lab_9;
+package lab.lab9;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

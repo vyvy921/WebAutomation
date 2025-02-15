@@ -65,3 +65,7 @@
     class variable: dung static block de override
                     {static variable = "new variable"}
                     nhung value van duoc share, nen cac object tiep theo se overide len object truoc do, va tat ca cac object cung refer ve class variable nay
+
+15. Co the khoi tao/ declare object / tao new instance tu 1 abstract class hay khong? VD: EmployeeAbstract e = new EmployeeAbstract()
+    No: khong the tao dc object/instance bang cach goi constructor cua no nhu mot normal class/ concrete class/ non-abstract class
+    Yes: tao duoc khi provide/cung cap cac method override
