@@ -86,7 +86,8 @@ Day 6:
 * Q&A 8, 9
 *
     .toString() dung de hien thi khi dung sout. Neu 1 doi tuong khong co thi se goi toString cua Object
-* Method signature: se chu y vao method name, parameter(so luong, loai): cung so luong, cung loai || cung so luong, khac access modifier or return type
+* Method signature: method name, parameters, return type
+    se chu y vao method name, parameter(so luong, loai): cung so luong, cung loai || cung so luong, khac access modifier or return type
 * Method Overloading: la mot ki thuat thiet ke ham. Trong do co 2 hay nhieu method trung ten nhau nhung khac nhau ve parameter
                     + khac parameter: nghia la khac so luong || khac kieu du lieu
     when: khi co dung cach xu ly logic, nhung khac du lieu dau vao/khac argument
@@ -146,6 +147,7 @@ Day 8:
     + xuat hien moi quan he is a relationship
     + co Controller de giai quyet ve mat design
         Controller: noi de xu ly nhung loai du lieu thuoc ve model do minh tao ra
+            Syntax: Controller(is-a type), Controller(Cha)
         void controllerMethod(List<Object Cha>){} //dung mindset functional programming
     + Cha name = new Con() : Cha name: ten vung nho co kieu du lieu Cha; new Con(): tao vung nho kieu Con
 
@@ -217,7 +219,7 @@ Day 9
 
 *Method chaining: Ki thuat viet method
 
-Day 9:
+Day 10:
 * Break "is a" relationship
     + Context: Bai toan tinh luong nhan vien. FTE, Contractor is a Employee voi cung cach tinh luong. Sau do co them nhieu loai khac
                co cach tinh luong khac vd Intern, Part-time.
@@ -234,3 +236,42 @@ Day 9:
 
 * Example: Test trang login page
 
+Day 11:
+* Access modifier
+    public: service method | everywhere
+    protected: inheritance method | sub-class everywhere | non-sub-class same package, su dung everywhere thong qua controller
+    default: | same package
+    private: support method | inside class
+
+    + Purpose: Control access to the attribute, method
+
+* Polymorphism
+    + Khi 1 doi tuong co the chuyen doi giua rat nhieu trang thai trong cung 1 is a relationship/ An object can transit and take many different forms in is-a relationship
+
+* Road-map
+    > Cach Java run, compile. Tuong tac voi 8 loai du lieu (int, char, boolean)
+    > Logic giai quyet bai toan (if-else, loop)
+    > Collection data (ArrayList, Set, HashMap)
+    > Tu tao ra data hay con goi la reference data/ user defined class. Hieu duoc Class, Object
+    > Xuat hien ngu canh is-a relationship khi co inheritance. Xuat hien Controller
+    > Hieu duoc 4 concept cua OOP
+    has-a relationship
+    try-catch
+    doc file tu system
+
+* has-a relationship
+   + Context: is-a Human thi co the truy cap duoc cong dich vu Covid. >> duoc chuyen thanh: nhung loai vat has-a Gen thi co the truy cap
+   + Syntax:
+            by defaut: public abstract method()
+            sub-class: implements A, B, C, ...
+            Controller: Controller(has-a type), Controller(Interface)
+
+* Comparable
+    Include:
+    + Interface Comparable:
+                method: CompareTo()
+    + Controller:
+                sort(List<Comparable>)
+    Usage:
+    + class: implements Comparable, sau do @Override CompareTo(){logic return int}
+    + test: Collections.sort(class)

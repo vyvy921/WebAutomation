@@ -68,4 +68,13 @@
 
 15. Co the khoi tao/ declare object / tao new instance tu 1 abstract class hay khong? VD: EmployeeAbstract e = new EmployeeAbstract()
     No: khong the tao dc object/instance bang cach goi constructor cua no nhu mot normal class/ concrete class/ non-abstract class
-    Yes: tao duoc khi provide/cung cap cac method override
+    Yes: tao duoc khi provide/cung cap cac method override (Day 9)
+
+16. Day 10. Tinh da hinh la gi?
+    For example: declare Webdriver driver, sau do dua vao bien moi truong de chuyen thanh loai browser driver nao do
+    boolean isChromeDriver;
+    WebDriver driver;
+    if(isChromeDriver){driver = new ChromeDriver()}
+    else {driver = new FirefoxDriver()}
+
+17. 4 concepts cua OOP,Builder Design pattern (Day 10)
