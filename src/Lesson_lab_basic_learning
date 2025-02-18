@@ -259,12 +259,15 @@ Day 11:
     try-catch
     doc file tu system
 
-* has-a relationship
+* has-a relationship | Interface
    + Context: is-a Human thi co the truy cap duoc cong dich vu Covid. >> duoc chuyen thanh: nhung loai vat has-a Gen thi co the truy cap
    + Syntax:
             by defaut: public abstract method()
             sub-class: implements A, B, C, ...
             Controller: Controller(has-a type), Controller(Interface)
+            non-abstract: khong ton tai
+            keyword static, default: chap nhan
+            variable: public static (by default)
 
 * Comparable
     Include:
@@ -275,3 +278,8 @@ Day 11:
     Usage:
     + class: implements Comparable, sau do @Override CompareTo(){logic return int}
     + test: Collections.sort(class)
+
+Day 12:
+* Comparator
+* Books: Head first design pattern, Clean code
+[PDF] book name, git hub
