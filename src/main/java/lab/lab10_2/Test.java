@@ -11,9 +11,14 @@ public class Test {
         Animal tigher1 = new Tiger("Tiger 1");
         Animal tigher2 = new Tiger("Tiger 2");
         Animal dog1 = new Dog("Dog 1");
-        Animal dog2 = new Dog("Dog 2");
+        Animal dog2 = new Dog("ADog 2");
+        Animal dog3 = new Dog("Dog 3");
 
-        List<Animal> animalList = Arrays.asList(horse1, horse2, tigher1, tigher2, dog1, dog2);
+        dog1.setSpeed(70);
+        dog2.setSpeed(70);
+        dog3.setSpeed(70);
+
+        List<Animal> animalList = Arrays.asList(horse1, horse2, tigher1, tigher2, dog2, dog1, dog3);
 
         ControllerAnimal.race(animalList);
 

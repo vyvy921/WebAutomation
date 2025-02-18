@@ -1,5 +1,6 @@
 package lab.lab10_2;
 
+import java.util.Collections;
 import java.util.List;
 
 public class ControllerAnimal {
@@ -19,8 +20,22 @@ public class ControllerAnimal {
             }
         }
 
-        System.out.println("\nList animal after race:");
+        System.out.println("\nList animal after racing:");
         System.out.println(animalList);
+
+        Collections.sort(animalList);
+        System.out.println("\nList animal after sorting DESC:");
+        System.out.println(animalList);
+
+        System.out.println(animalList);
+
+        System.out.println("\nList animal after sorting by speed, name ASC:");
+        Collections.sort(animalList, new SortBySpeed().thenComparing(new SortByName()));
+        System.out.println(animalList);
+
         System.out.println("\nThe winner is " + winner);
     }
+
+
+
 }

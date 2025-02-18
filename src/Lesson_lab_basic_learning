@@ -276,11 +276,18 @@ Day 11:
     + Controller:
                 sort(List<Comparable>)
     Usage:
-    + class: implements Comparable, sau do @Override CompareTo(){logic return int}
-    + test: Collections.sort(class)
+    + Concrete class: implements Comparable, sau do @Override CompareTo(){logic return int}
+    + test: Collections.sort(Concrete class)
 
 Day 12:
 * Comparator
+  Include:
+    + Interface: Comparator
+                method: Compare(a1, o2)
+    + Controller: sort(List<Comparator)
+  Usage:
+    + Concrete class: implements Comparator, @Override Compare()
+    + test: Collections.sort(List<Comparator>)
 
 * Books: Head first design pattern, Clean code
 [PDF] book name, git hub

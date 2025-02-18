@@ -1,6 +1,6 @@
 package lab.lab10_2;
 
-public abstract class Animal {
+public abstract class Animal implements Comparable<Animal> {
     protected String name;
     protected int speed;
 
@@ -23,6 +23,11 @@ public abstract class Animal {
 
     //Create abstract method speed() return random speeds
     public abstract int speed();
+
+    @Override
+    public int compareTo(Animal animal) {
+        return animal.getSpeed() - this.getSpeed();
+    }
 
     @Override
     public String toString() {
