@@ -15,4 +15,5 @@ public class InternalLoginPage extends LoginPage{
     public String loginBtn() {
         return "InternalLoginPage | loginBtn";
     }
+
 }

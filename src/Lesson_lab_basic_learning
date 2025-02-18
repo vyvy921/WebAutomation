@@ -281,5 +281,15 @@ Day 11:
 
 Day 12:
 * Comparator
+
 * Books: Head first design pattern, Clean code
 [PDF] book name, git hub
+
+* Strategy Design Pattern
+
+* Program/Chuong trinh | Controller on interface/abstraction, NOT implementations(details) sub-classes/concrete classes
+
+* Enum
+    Reference type. Noi giu cac reference data
+
+*Lab Racing Animal using Strategy Design Pattern
