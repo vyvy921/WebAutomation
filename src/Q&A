@@ -78,3 +78,9 @@
     else {driver = new FirefoxDriver()}
 
 17. 4 concepts cua OOP,Builder Design pattern (Day 10)
+
+18. Cac loai Exception (Day 13)
+
+19. Is-a relationship -> be gay is-a relationship -> sinh ra abstraction de lam gi -> polymorphism la lam gi ->
+    encapsulation dinh voi 1 builder design pattern -> interface la gi? giong va khac voi abstract class la gi? giong va khac voi abstraction la gi? ->
+    has-a relationship la gi? strategy design pattern design ntn trong truong hop su dung interface (Day13)

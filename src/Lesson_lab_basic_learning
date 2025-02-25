@@ -303,6 +303,10 @@ Day 12:
 
 Day 13
 * Handle Exception
+    What: Exception trong Java co 2 loai la Exceptions va Error duoc extends tu class Throwable. Error la nhung cai ma khong the handle duoc
+        tuc la khong the dung try catch duoc. Vi nhung loi lien quan den Error lien quan den phan cung cua may Virtual Machine, Assertion
+        VD: StackOverflow, OutOfMemory, Verify. Cai con loai la Exceptions, co 2 loai Checked & Unchecked muon handle thi se su dung
+        try-catch
     Syntax:
         try( code block)
         catch(Exception e){} //catch tat ca cac Exception
@@ -313,8 +317,25 @@ Day 13
         catch(ArithmeticException a): catch chinh xac loai loi Exception nao do
         finally {code block} // always implement
 
-    Handle:
+    What if: neu khong handle exception thi chuong trinh se bi crash, vi khong the thuc thi duoc dong lenh bi loi do
+
+    Mindset: Can phai handle Exception:
+        + khi thiet ke Controller, method: throw new Exceptiontype...
+        + khi su dung tu class, Controller cua nguoi khac: try {} catch(){}
+
+    Case handle:
         + null
         + empty
-        + connection error
-        +
+        + connection error, fail -> retry or message
+        + bien moi truong, browser type, API tao data va xoa data -> throw new Exception...
+
+    Type of Exceptions:
+        + Checked exception: loi phat hien ngay tai thoi diem compile time. VD IO Exception, Interrupted, Remote. Noi thiet ke
+            class se throw ra 1 loai Exception, Java compiler se detect noi su dung phai handle/ try-catch
+        + Unchecked exception: la nhung loi xay ra o thoi diem runtime. VD Loi toan hoc/ Arithmetic, null pointer, Index out of bound
+            IllegalArgument
+
+* Simulate:
+    + Webdriver co abstract method bat buoc class con phai Override: initDriver(), closeDriver()
+    + ChromDriver, FixefoxDriver is a Webdriver, must implement 2 method above
+    + DriverFactory / Controller: viet logic tao method getWebDriver, dua vao parameter Browser type va return Webdriver tuong ung.
