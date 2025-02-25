@@ -299,4 +299,22 @@ Day 12:
 * Enum
     Reference type. Noi giu cac reference data
 
-*Lab Racing Animal using Strategy Design Pattern
+* Lab Racing Animal using Strategy Design Pattern
+
+Day 13
+* Handle Exception
+    Syntax:
+        try( code block)
+        catch(Exception e){} //catch tat ca cac Exception
+            + {} : ignore Error, don't print anything
+            + {e.printStackTrace}: print error
+            + {sout("[ERR] write an error") logic code}: customize error content
+            + {throw new IlligalArgumentException("[Err] message")}: throw a known error with a message
+        catch(ArithmeticException a): catch chinh xac loai loi Exception nao do
+        finally {code block} // always implement
+
+    Handle:
+        + null
+        + empty
+        + connection error
+        +
