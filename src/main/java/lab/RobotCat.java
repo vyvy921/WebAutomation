@@ -5,7 +5,7 @@ public class RobotCat {
     private String name;
     private int age;
 
-     public RobotCat(int age, String name) {
+    public RobotCat(int age, String name) {
         this.age = age;
         this.name = name;
     }
@@ -29,7 +29,7 @@ public class RobotCat {
         this.name = name;
     }
 
-    public void charge(){
+    public void charge() {
         System.out.println("Hello ");
     }
 }

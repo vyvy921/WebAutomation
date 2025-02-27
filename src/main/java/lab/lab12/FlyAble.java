@@ -5,4 +5,5 @@ public class FlyAble implements Ability{
     public int act() {
         return -1;
     }
+
 }

@@ -1,7 +1,13 @@
 Day 1:
+- JDK: bao gồm JVM + JRE. La bo phan mem cung cap cac moi truong de phat trien ung dung bang java.
 - Variable: ten vung nho/Alias trong ram | int number
 - Declare a variable: khai bao ten 1 vung nho trong ram, chua 1 kieu du lieu | int number or int number = 0
 - Assign, reassign: gan, gan lai gia tri/value cho ten vung nho/bien/variable | number = 1, number = 2
+- Statement: la mot dong lenh thuc thi mot tac vu cu the. Ket thuc bang ;
+- Code block: la mot tap hop cac lenh duoc nhom lenh trong dau {}
+- OOP la gi? La mot mo hinh lap trinh su dung cac doi tuong de xay dung ung dung. OOP tap trung vao cac doi tuong nhieu hon la logic
+    OOP duoc xay dung dua tren khai niem class, object va 4 nguyen li chinh
+/ is a computer programming model that organizes program around objects that contain data and code
 
 Day 2:
 - Operator: Arithmetic(+-*/), Comparision (><=) return true/false, logical (and or not), assignment(= += -+)
@@ -43,6 +49,7 @@ Day 4:
         public static String function_String_2(int number){return "A String"}
   - Keyword:
         return: thoat ra khoi vong lap, dung lai method, khong thuc thi cac statement phia sau
+  - Method signature:
 
 * ArrayList
  - ArrayList implements interface List
@@ -86,8 +93,10 @@ Day 6:
 * Q&A 8, 9
 *
     .toString() dung de hien thi khi dung sout. Neu 1 doi tuong khong co thi se goi toString cua Object
-* Method signature: method name, parameters, return type
-    se chu y vao method name, parameter(so luong, loai): cung so luong, cung loai || cung so luong, khac access modifier or return type
+* Method signature: method name & parameters(so luong, loai)
+                                  parameters(cung so luong, cung loai) -> khong chap nhan Overloading, bat ke thay doi access modifier, return type
+                                  parameters(cung so luong, khac loai) -> OK Overloading
+                                  parameters(khac so luong) -> OK Overloading
 * Method Overloading: la mot ki thuat thiet ke ham. Trong do co 2 hay nhieu method trung ten nhau nhung khac nhau ve parameter
                     + khac parameter: nghia la khac so luong || khac kieu du lieu
     when: khi co dung cach xu ly logic, nhung khac du lieu dau vao/khac argument
@@ -339,3 +348,5 @@ Day 13
     + Webdriver co abstract method bat buoc class con phai Override: initDriver(), closeDriver()
     + ChromDriver, FixefoxDriver is a Webdriver, must implement 2 method above
     + DriverFactory / Controller: viet logic tao method getWebDriver, dua vao parameter Browser type va return Webdriver tuong ung.
+
+Day 14
