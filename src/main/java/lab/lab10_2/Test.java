@@ -8,8 +8,8 @@ public class Test {
 
         Animal horse1 = new Horse("Horse 1");
         Animal horse2 = new Horse("Horse 2");
-        Animal tigher1 = new Tiger("Tiger 1");
-        Animal tigher2 = new Tiger("Tiger 2");
+        Animal tiger1 = new Tiger("Tiger 1");
+        Animal tiger2 = new Tiger("Tiger 2");
         Animal dog1 = new Dog("Dog 1");
         Animal dog2 = new Dog("ADog 2");
         Animal dog3 = new Dog("Dog 3");
@@ -18,7 +18,7 @@ public class Test {
         dog2.setSpeed(70);
         dog3.setSpeed(70);
 
-        List<Animal> animalList = Arrays.asList(horse1, horse2, tigher1, tigher2, dog2, dog1, dog3);
+        List<Animal> animalList = Arrays.asList(horse1, horse2, tiger1, tiger2, dog2, dog1, dog3);
 
         ControllerAnimal.race(animalList);
 
