@@ -353,3 +353,11 @@ Day 13
 
 Day 14
 https://www.techonthenet.com/sql/index.php
+* DataFactory
+    + create a method service class level: public static void readFile(String pathFile)
+        + sequence of logic: Source of file input stream (pathFile) ------ input ----- bufferedReader
+        + close session: bufferedReader -- input -- source
+    + create a method service class level, return List<Person>: convertDataIntoPerson
+
+* Person class/entity
+    + Purpose: Read file -> return a list of user
