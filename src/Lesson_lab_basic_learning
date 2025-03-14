@@ -177,6 +177,11 @@ Day 8:
                   khong can khoi tao object, van co the goi duoc class method, class variable. VD: Dog.id, Dog.find()
         + non-static: cac method, attribute thuoc object level
                   phai sinh ra object moi dung duoc. VD: Dog dog = new Dog(); dog.name || new Dog();
+
+* static block
+    override bien static/class variable, static thuoc class level => static variable dung chung cho tat ca cac object
+    override static method => NO. Khong the override, do static method thuoc ve class. Ma Override xuat hien tron ngu canh truc thuoc object
+
 Lab 8: (7.1, 7.2)
     + Design: thiet ke model
     + Xu ly: Viet logic cho Controller
