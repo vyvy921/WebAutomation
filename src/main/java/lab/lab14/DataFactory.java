@@ -50,8 +50,6 @@ public class DataFactory {
                 readline = bufferedReader.readLine();
             }
 
-            System.out.println(personList);
-
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         } catch (Exception e) {
@@ -67,7 +65,8 @@ public class DataFactory {
         String absolutePath = System.getProperty("user.dir").concat(relativePath);
 
         //DataFactory.readFile(absolutePath);
-        DataFactory.convertDataIntoPersonList(absolutePath);
+        List<Person> personList = DataFactory.convertDataIntoPersonList(absolutePath);
+        System.out.println(personList);
 
     }
 
