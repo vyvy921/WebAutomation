@@ -364,10 +364,11 @@ https://www.techonthenet.com/sql/index.php
         + close session: bufferedReader -- input -- source
     + create a method service class level, return List<Person>: convertDataIntoPerson
 
+* ReadFile:
 * Person class/entity
     + Purpose: Read file -> return a list of user
-    + How to lay data va chuyen nguoc sang thanh Object
-        + readfile from filePath (after reading will return String)
+    + How to: lay data va chuyen nguoc sang thanh Object
+        + readFile from filePath (after reading will return String)
         + xu ly String thu duoc: for each line slit String by ; -> String[]
         + lay tung String dua vao bien name, age, salary
         + Tao new Person(name, age, salary)
@@ -375,3 +376,10 @@ https://www.techonthenet.com/sql/index.php
 
 * implicit casting/ upcasting
     Ep kieu ngam dinh, goi phuong thuc cua lop con thong qua lop Cha. Ex: Dog is a Animal
+
+* WriteFile:
+    + Purpose: Save an Object into a file .txt
+    + How to:
+        + create a support method voi parameter(list Object can lay, filePath) : private void write(List<Person>, saveLocation)
+        + logic : for each person in list, get each attribute to save in each variable
+        + handle exception: list null, empty

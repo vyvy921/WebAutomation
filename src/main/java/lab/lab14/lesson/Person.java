@@ -1,4 +1,4 @@
-package lab.lab14;
+package lab.lab14.lesson;
 
 public class Person {
 
