@@ -235,15 +235,17 @@ Day 9
 
 Day 10:
 * Break "is a" relationship
-    + Context: Bai toan tinh luong nhan vien. FTE, Contractor is a Employee voi cung cach tinh luong. Sau do co them nhieu loai khac
-               co cach tinh luong khac vd Intern, Part-time.
+    + Context: Bai toan tinh luong nhan vien. FTE, Contractor is a Employee voi cung cach tinh luong. Sau do co them nhieu loai
+     nhan vien khac co cach tinh luong khac vd Intern, Part-time.
     + Solution:
         (1): tao them logic trong Controller. VD: if(Employee instanceof FTE){} ...
             Su dung CASTING de chuyen sang kieu FTE va lay method cua rieng FTE
             Problem: be gay is a relationship, kho maintain code
-        (2): sua design o class Cha, them 1 ham return ve 0 or null
+        (2): sua design o class Cha, them 1 ham return ve 0 or null, class Con se @Override method
 
 * Abstraction
+    + Khai niem: tao ra model o muc tong quat, chi tap trung vao cac dac diem thiet yeu. Tinh abstraction duoc thuc hien
+                 thong qua tao class Abstract, Interface
     + Strongly force is a relationship. Bat buoc class Con phai viet method override
     + Syntax: abstract method phai nam trong abstract class
     + Khoi tao: AbstractClass ac = new ConcreteClass(){}
@@ -356,3 +358,11 @@ Day 13
 
 Day 14
 https://www.techonthenet.com/sql/index.php
+* DataFactory
+    + create a method service class level: public static void readFile(String pathFile)
+        + sequence of logic: Source of file input stream (pathFile) ------ input ----- bufferedReader
+        + close session: bufferedReader -- input -- source
+    + create a method service class level, return List<Person>: convertDataIntoPerson
+
+* Person class/entity
+    + Purpose: Read file -> return a list of user

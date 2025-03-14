@@ -45,6 +45,9 @@
 
 10. Phan biet Functional Programming va Object Programming
     FP: tra loi cho cau hoi What to solve? Quan tam function nay giai quyet van de gi? dau vao la gi, dau ra la gi?
+    OOP: la mot mo hinh lap trinh xoay quanh cac object va dua tren khai niem class & object de xay dung nen phan mem.
+         1 object se bao gom attribute va method. Class la mot template/ blueprint dung de tao ra object
+         OOP is a programming pattern that is built around objects or entities, so it's called object-oriented programming.
 
 11. Phan biet Overloading va Overridding (Day 7)
     + Overloading: xuat hien o thoi diem compile time
@@ -77,10 +80,15 @@
     if(isChromeDriver){driver = new ChromeDriver()}
     else {driver = new FirefoxDriver()}
 
-17. 4 concepts cua OOP,Builder Design pattern (Day 10)
+17. 4 concepts cua OOP, Builder Design pattern (Day 10)
 
 18. Cac loai Exception (Day 13)
 
 19. Is-a relationship -> be gay is-a relationship -> sinh ra abstraction de lam gi -> polymorphism la lam gi ->
     encapsulation dinh voi 1 builder design pattern -> interface la gi? giong va khac voi abstract class la gi? giong va khac voi abstraction la gi? ->
     has-a relationship la gi? strategy design pattern design ntn trong truong hop su dung interface (Day13)
+
+20. Interface va Abstract
+    Giong: deu co cac abstract method(), can class Con trien khai @Override thong qua tu khoa extends/implement
+    Khac: Abstract class có the chua non-abtract method, Interface chi co abstract method. 1 concrete class chi co the extends
+          1 Abstract class, nhung co the implements nhieu Interface
