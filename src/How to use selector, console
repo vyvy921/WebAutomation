@@ -7,3 +7,7 @@
     $=: end by | ex: $('[id$="ifr"]')
     ^=: start with | ex: $('[id^="mce"]')
 
+- How to use a method to findElement
+    + from WebDriver driver = new ChromeDriver() | driver.findElement
+    + from WebElement element = driver.findElement | element.findElement
+

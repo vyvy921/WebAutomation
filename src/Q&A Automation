@@ -9,3 +9,18 @@
     - Explicit wait: apply cho rieng 1 element, override implicit wait
 
 3. Khi nao dung throw new RunTimeException
+
+4. Cac Strategy de tim Element
+    + By id, className, name, tageName
+    + By cssSelector
+    + By xPath
+
+5. Cau truc cua mot Element/ HTML Structure
+    Gom 3 phan:
+        + tag name: Ex: input, p, div, button, ...
+        + attribute-value: Ex: id=username, name=username, type=text
+        + text/content: "something in here"
+    Moi quan he cua 1 the Element voi element khac:
+        + decedents: hau due. Ex: child, grandchild
+        + ancestors: cha, ong ba, to tien. Ex: parents, grandparents
+        + siblings: anh chi em ruot. Ex: sister, brother,

@@ -16,6 +16,7 @@ Lesson 2
 - DriverFactory
     * purpose: can xay dung 1 method de su dung nhieu lan trong class FormInteraction
                 tao 1 class method de manage browser session
+                tao nhanh driver
 - FormInteraction
         Get a chrome/firefox/safari session
             usage: WebDriver
@@ -68,6 +69,3 @@ Lesson 2
              driver.navigate().back()
     * Exception: stale element reference: element is not attached to the page document
         => Solution: re-interact with the element again
-
-- DriverFactory
-    Custom de tao driver nhanh
