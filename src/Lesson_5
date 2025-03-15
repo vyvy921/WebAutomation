@@ -1,0 +1,57 @@
+* 3 types to construct POM
+- what: is a technique to convert a page/ particular page into a class
+- purpose: reuse logic (maintenance element)
+
+** Traditional POM - type 1
+    1. Create a class page
+    1.1. Define WebDriver(final: ko thay doi driver), css Selector element (static = dung chung), WebElement (find element from driver)
+    1.2. Create a constructor: contains a WebDriver
+    1.3. Introduce service method (return) object getter for element. Return element tim duoc tren page
+
+    2. Usage
+    2.1. Create a class to use POM
+    2.2. Innit class LoginPage (new object)
+    2.3. Call element in page object
+
+** Type 2
+    - Issue: type 1 phai goi di goi lai sendkey, click nhieu lan
+    - Expected: 1 element lam 1 viec do luon. Vd khi goi longinBtn la se click vao nut login luon
+
+    1. Create a class page
+    1.1, 2. the same
+    1.3. Introduce interaction method (void)
+
+
+** Type 3
+    - How: xem theo tung component (Vd Header, Footer, Left sidebar, Section, Login form, List item), ko phai theo element
+    - Expected: tao ra component chua cac element, dung de reuse cho cac page khac
+    - When: Khi thay 1 component xuat hien o nhieu noi
+
+    1. Create a class LoginComponent
+    1.1. Define cac Element
+    2. Create a class LoginPageModel
+    2.1. Introduce service method, return LoginComponent
+
+    - Best practice: find Component/ list component(s), narrow down searching to find each element(s) of each component/ list component
+
+** Generic type
+    - Type co boundary: <T extends LoginPage> void Login(class<T> loginPageClass) gioi han kieu dua vao
+        parameter dau vao la dang Class (class<T> loginPageClass) -> la template/ class generic, ko tao dc method
+        parameter dau vao la dang Generic type (T loginPageClass) -> la dang object generic, tao dc method
+    - Type khong boundary:
+
+    * Ky thuat generic type & reflection
+    Tao Object -> can co Constructor -> Xac dinh kieu du lieu cho Constructor
+    1. public <T extends LoginPage> void Login(class<T> loginPageClass)
+    2. Lay constructor tu class<T>
+    2.1. Tao parameter cho Constructor (chua xac dinh kieu du lieu nao -> dung Class<?>)
+    2.2. Tao Constructor bang ki thuat phan chieu reflection: getConstructor tu chinh class duoc dua vao
+    3. Khoi tao doi tuong/Init object tu constructor nay
+    4. Goi phuong thuc login() tren doi tuong da tao
+
+** Annotation
+    - Purpose: tao mot component annotation de define 1 cssSelection cho component. Sau nay tim component thogn qua
+    Annotation, chu khong phai tim Element nua
+    - Retention: thoi diem annotation duoc thuc thi. (runtime, compile time...)
+    - Target: scope to apply (Ex. Element.TYPE : apply o tren claa)
+    - Syntax: public @interface Annotation

@@ -1,0 +1,19 @@
+When?
+    - Xay ra khi choi voi Inheritance/ Interface
+    - Xay ra khi choi voi Interface ma chi co duy nhat 1 ham abstract
+    - Interface ma chi co duy nhat 1 ham abstract khong co code => Functional Interface
+
+Question:
+    1. Trong Interface co code ko?
+        No: Interface abstract methods cannot have body/code
+        Yes: from JDK 8, method in Interface can have body, but need to use keyword static or default.
+    2. Cac bien, ham trong Interface thuoc kieu gi?
+        + Cac Variable mac dinh la public static final. Vi tinh chat nay nen variable luon phai duoc khai bao, khoi tao
+        dau tien, va khong thay doi trong suot qua trinh thuc khi
+        + Cac Method mac dinh la public
+    3. Interface co dung tu khoa private khong?
+        Yes. private method(){ code block }
+    4. Implement la gi?
+        La hanh dong lap trinh vien phai viet code cho ham abstract duoc khai bao ben Abstract Class hoac Interface
+    5. Co tao new Object truc tiep tu Interface duoc ko?
+        Yes: Nhung phai tao object dang anonymous class

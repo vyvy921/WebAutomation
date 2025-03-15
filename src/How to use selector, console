@@ -1,0 +1,9 @@
+- Console syntax
+    $('')
+    $('.className') | $('#idName') ex: $('#username')
+    $('[attribute="value"]') ex: $('[id="userName"]')
+
+- How to find a dynamic attribute, id
+    $=: end by | ex: $('[id$="ifr"]')
+    ^=: start with | ex: $('[id^="mce"]')
+

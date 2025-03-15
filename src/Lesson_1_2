@@ -1,0 +1,73 @@
+Lesson 1
+- Architecture:
+    + Moi browser se co 1 BrowserDriver de control Browser do. Doan Code duoc viet ra se gui den BrowserDriver thong qua
+      HTTP protocol theo chuan REST API format
+- Maven:
+    + la mot software project management, la mot build tool dung de quan ly dependency bang cach dua cac dependency vao POM file.
+    + add selenium repository
+- WebDriver Binding language
+    +
+- WebDriver
+    + Do cac Browser tao ra. VD: Chrome: ChromeDriver, FireFox: FireFoxDriver,...
+
+- Launch a browser
+
+Lesson 2
+- DriverFactory
+    * purpose: can xay dung 1 method de su dung nhieu lan trong class FormInteraction
+                tao 1 class method de manage browser session
+- FormInteraction
+        Get a chrome/firefox/safari session
+            usage: WebDriver
+        Define Selector values
+            purpose: tach ra tung parameter Element, de dua vao tung argument Selector
+        Navigate to the target page
+            usage: WebDriver
+        Find Elements (de tim duoc Element thi se dung method ten la findElement. Dau tien se phan tich xem Method
+            signature cua no truoc. Sau do se tien hanh cung cap cac Arguments cho tung Parameter)
+            * usage WebElement
+            * Co 2 cach tim Elements: C1: driver session
+            * <tagName attribute1 attribute2>text<>
+            * Strategy to find Element by: id, cssSelector (id, attribute khac)
+            * Note: truoc khi tim Element phai dam bao/make sure la da o tren page/get(url) da co nhung elements do roi
+        Interaction
+            * usage: WebElement
+        Quit the session
+            * usage: WebDriver
+        * Exception: Quit browser session cho du co loi hay ko
+            => Solution: use try-catch
+
+- Implicit wait
+    * purpose: Apply cho toan bo/ for whole driver session khi no tim element cho trang/ when it finds all elements for the page
+               chi dung cho Find element(s)
+    * usage: WebDriver.manage().timeouts().implicitlyWait().
+             Duration.ofSeconds(15)
+                if <= 15s: call all elements. Interval time/thoi gian cho = 500ms/0.5s
+                if >15s:
+- Explicit wait
+
+- Fluent wait (ko dung nhieu trong thuc te)
+
+- By.cssSelector matching voi nhieu element
+    * usage: findElements
+             final int USERNAME_INDEX = 0
+             final int PASSWORD_INDEX = 1
+
+            .get(USERNAME_INDEX).sendkey()
+    (?) Lam sao de kiem tra element khong hien dien tren page?
+        (C1): List<WebElement>
+                if(!list.isEmpty) Assert.fail(...) --Neu list khong rong =>
+        (C2): dung try-catch
+
+- By.linkText()
+- By.partialLinkText()
+- Get Page title, current URL, attribute values <class, type, name, id, ...>
+    * usage: driver. : getTitle(), getCurrentURL(), getAttribute(""), getCssValue("")
+- Refresh, go previous
+    * usage: driver.navigate().refresh()
+             driver.navigate().back()
+    * Exception: stale element reference: element is not attached to the page document
+        => Solution: re-interact with the element again
+
+- DriverFactory
+    Custom de tao driver nhanh

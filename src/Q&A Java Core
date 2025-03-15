@@ -1,0 +1,83 @@
+
+4. Cach tao method return ve 1 object, 1 list object
+
+5. Lam the nao de goi 1 method?
+    - Using dot notation (.) to call a method
+
+6. Phan biet break, continue, return trong vong lap/loop, method
+    Khi dung return trong vong loop se ket thuc vong loop + method. Khong thuc thi cac statement phia sau.
+
+7. Cac loai Collection
+ - List: ArrayList
+    Declare: List<Object> arrList = new ArrayList<>()
+    Methods: CRUD
+ - Set: HashSet
+    Declare: Set<Object> setList = new HashSet<>()
+ - Map: HashMap
+    Syntax: Using a couple/entry Key, Value
+    Declare: Map<Object key, Object Value> mapList = new HashMap<>()
+    Print: lay tung key: mapList.keySet() -> return Set
+            in tung key: get.(key).sout | Dung enhance for, loop qua tung key
+    Methods:
+        replace(key, value): Vao Key, update thanh value
+        replace(key, oldValue, newValue): Vao key, tim gia tri "oldValue", neu co thi update thanh "newValue"
+        remove(key, value)
+    Moi mot Key tuong ung voi 1 value cuoi cung ma no duoc nhan
+
+8. Class, Object la gi?
+    Class la mot template/blueprint/ ban thiet ke dung de thiet ke ra 1 cai gi do/Object
+    Object/Instance la mot doi tuong cu the cua ban thiet ke/Class
+
+9. Lam sao de tao ra mot Object?
+    Tao Object tu ban thiet ke/Class thong qua tu tu khoa new de goi Contructor cua no
+    Sau khi da co Object duoc tao ra, tu thong qua object do se goi cac .method() tuong ung
+
+10. Phan biet Functional Programming va Object Programming
+    FP: tra loi cho cau hoi What to solve? Quan tam function nay giai quyet van de gi? dau vao la gi, dau ra la gi?
+    OOP: la mot mo hinh lap trinh xoay quanh cac object va dua tren khai niem class & object de xay dung nen phan mem.
+         1 object se bao gom attribute va method. Class la mot template/ blueprint dung de tao ra object
+         OOP is a programming pattern that is built around objects or entities, so it's called object-oriented programming.
+
+11. Phan biet Overloading va Overridding (Day 7)
+    + Overloading: xuat hien o thoi diem compile time
+    + Overriding: xuat hien o thoi diem run time
+                  method() giong het class Cha
+                  khi muon reimplement method o ben trong, thay doi logic o ben trong
+                  Reuse ve mat logic, va ca design
+
+12. Khac biet Functional Programming va OOP - Inheritance
+    Functional: reuse ve logic
+    Inheritance: reuse ve mat design
+
+13. Khi nao dung static? Dung ntn? (day 8)
+
+14. Co override duoc class member khong? (day 8)
+    class method: khong
+          Reason: ngu canh cua override la dung de viet lai logic cho 1 object, doi voi class method la method truc thuoc class nen khong the viet lai logic
+    class variable: dung static block de override
+                    {static variable = "new variable"}
+                    nhung value van duoc share, nen cac object tiep theo se overide len object truoc do, va tat ca cac object cung refer ve class variable nay
+
+15. Co the khoi tao/ declare object / tao new instance tu 1 abstract class hay khong? VD: EmployeeAbstract e = new EmployeeAbstract()
+    No: khong the tao dc object/instance bang cach goi constructor cua no nhu mot normal class/ concrete class/ non-abstract class
+    Yes: tao duoc khi provide/cung cap cac method override (Day 9)
+
+16. Day 10. Tinh da hinh la gi?
+    For example: declare Webdriver driver, sau do dua vao bien moi truong de chuyen thanh loai browser driver nao do
+    boolean isChromeDriver;
+    WebDriver driver;
+    if(isChromeDriver){driver = new ChromeDriver()}
+    else {driver = new FirefoxDriver()}
+
+17. 4 concepts cua OOP, Builder Design pattern (Day 10)
+
+18. Cac loai Exception (Day 13)
+
+19. Is-a relationship -> be gay is-a relationship -> sinh ra abstraction de lam gi -> polymorphism la lam gi ->
+    encapsulation dinh voi 1 builder design pattern -> interface la gi? giong va khac voi abstract class la gi? giong va khac voi abstraction la gi? ->
+    has-a relationship la gi? strategy design pattern design ntn trong truong hop su dung interface (Day13)
+
+20. Interface va Abstract
+    Giong: deu co cac abstract method(), can class Con trien khai @Override thong qua tu khoa extends/implement
+    Khac: Abstract class có the chua non-abtract method, Interface chi co abstract method. 1 concrete class chi co the extends
+          1 Abstract class, nhung co the implements nhieu Interface
