@@ -1,0 +1,385 @@
+Day 1:
+- JDK: bao gồm JVM + JRE. La bo phan mem cung cap cac moi truong de phat trien ung dung bang java.
+- Variable: ten vung nho/Alias trong ram | int number
+- Declare a variable: khai bao ten 1 vung nho trong ram, chua 1 kieu du lieu | int number or int number = 0
+- Assign, reassign: gan, gan lai gia tri/value cho ten vung nho/bien/variable | number = 1, number = 2
+- Statement: la mot dong lenh thuc thi mot tac vu cu the. Ket thuc bang ;
+- Code block: la mot tap hop cac lenh duoc nhom lenh trong dau {}
+- OOP la gi? La mot mo hinh lap trinh su dung cac doi tuong de xay dung ung dung. OOP tap trung vao cac doi tuong nhieu hon la logic
+    OOP duoc xay dung dua tren khai niem class, object va 4 nguyen li chinh
+/ is a computer programming model that organizes program around objects that contain data and code
+
+Day 2:
+- Operator: Arithmetic(+-*/), Comparision (><=) return true/false, logical (and or not), assignment(= += -+)
+- Ternary operation: toan tu 3 ngoi. String msg, boolean isOnTime. msg = isOnTime ? "go" : "not"
+- Bitwise operator: vi sao && || ma khong phai & |. Thuc hien phep toan tren tung bit. It performs operation in each individual bit
+- Nested if..else | if...else if..else if...else.
+- Cach chay chuong trinh: int total = num1 + num2 | tinh toan ben phai, sau do gan vao variable ben trai
+- Debug: chay chuong trinh voi muc dich phat hien va sua loi, tao 1 breakpoint
+
+Day 3:
+* ForLoop. Chu y 3 gia tri for (init_value, condition, conditional_change_trigger){ //execute sth if true}
+ - When: khi biet so lan lap nhat dinh
+ - Infinitive loop. for( ; ; ){}
+* Enhance for. Dung de lay du lieu ra, ma khong thay doi index trong array for (int num : numberArr)
+* Control keyword: break, continue
+* WhileLoop. while(true){ do sthgti}
+ - When: chua biet so lan lap, muon lam it nhat 1 lan. do{sth} while(sth is true) or while (sth is true) {do sth}
+* Array. 1 tap hop cua nhieu vung nho lien tiep chua cung 1 kieu du lieu. is a data structure that stores a collection of elements of the same data type. Element in array has the same type
+Array has a fixed length
+ - Declare an array: int[] numbers, int numbers[]
+                     int[] numbers = new int[5]
+
+ - Truy cap index: numbers[0]
+                   numbers[1]
+
+Day 4:
+* Switch case
+ - When switch case: xac dinh cho chinh xac 1 gia tri
+ - When else-if: xac dinh cho 1 khoang/range
+ - syntax: switch (enum){
+                case 1: break;
+                case 2: break;
+                default: }
+* Function
+  - Purpose: Maintenance, Extendable, Reliable, adhere to/comply with DRY
+  - Syntax: access modifier (public, protected, private) class method (static) return type (void or data type) function_name(parameters){}
+        function_name(teo, ti, tun): Argument, gia tri luc dua vao.
+        public void function_String(){}
+        public static String function_String_2(int number){return "A String"}
+  - Keyword:
+        return: thoat ra khoi vong lap, dung lai method, khong thuc thi cac statement phia sau
+  - Method signature:
+
+* ArrayList
+ - ArrayList implements interface List
+ - Declare:
+        ArrayList myList = new ArrayList(); //ArrayList: raw type. myList co the dung duoc nhieu loai du lieu. VD: myList.add(10), myList.add("Teo"), myList.add(true)
+        ArrayList<Integer> myList = new ArrayList<>(); //Generic type. Java collection khong chap nhan primary type, chi chap nhan Wrapper type
+        List<Integer> myList = new ArrayList<>(); //do co cac method return List, su dung tinh polymorphism
+        List<Integer> myList2 = Arrays.asList(1,2,3); //tao ra 1 list co dinh, co 3 elements, khong thay doi so luong cac phan tu trong do nua
+ - Method of ArrayList
+        add(), set(), for (index, .size, index++), enhance for
+        .isEmpty() return boolean, .contains return boolean, indexOf
+        .subList
+Day 5:
+ -Dot notation
+* Set
+ - How: remove duplicated, automatically sorted
+* Map (xem Q&A)
+* String
+ - Declare:
+    Literal declaration: String name = "Teo"; (Literal declaration = Khai báo biến bằng cách gán trực tiếp một giá trị cố định)
+    String Object declaration: String name = new String("Teo")
+ - String la imutable Object: khong thay doi duoc value cua no. Nen khi dung ham replace, trim,... thi no se clone object ra cho khac va thay doi gia tri,
+   nhung khong return ket qua. Vi the de dung replace(), trim() ta se tao 1 String khac de chua dung
+ - Method:
+    .replace()
+    .trim()
+    .subString(): return String. cat chuoi (cat tu dau chuoi, hoac cat giua chuoi). Syntax: lay tu index.. den index... (exclude).
+    .indexOf(): return index dau tien cua 1 ki tu/chuoi nao do
+    .contains: return boolean
+    .split(): dua vao condition, return cac doan String
+    .valueOf(): return String /Interger/ Object (wrapper class)
+    .removeAll(): Loai bo theo 1 quy luat nao do, RelugarExpression |Regex []set [^]not ^start -fromTo |or $end ()group .anyExceptNewline *0orMore +1orMore ?0or1
+    .sout("chuoi" + 12 + 3): return chuoi123 : day la noi chuoi chu khong phai tinh toan
+    .sout("chuoi" + (12 + 3)): return chuoi15 : tinh toan
+    .concat(): return String
+ - StringBuilder
+    why: Tang performance de xu ly cac chuoi
+ - So sanh 2 String: dung tu khoa .equals
+
+Day 6:
+* Q&A 8, 9
+*
+    .toString() dung de hien thi khi dung sout. Neu 1 doi tuong khong co thi se goi toString cua Object
+* Method signature: method name & parameters(so luong, loai)
+                                  parameters(cung so luong, cung loai) -> khong chap nhan Overloading, bat ke thay doi access modifier, return type
+                                  parameters(cung so luong, khac loai) -> OK Overloading
+                                  parameters(khac so luong) -> OK Overloading
+* Method Overloading: la mot ki thuat thiet ke ham. Trong do co 2 hay nhieu method trung ten nhau nhung khac nhau ve parameter
+                    + khac parameter: nghia la khac so luong || khac kieu du lieu
+    when: khi co dung cach xu ly logic, nhung khac du lieu dau vao/khac argument
+    xuat hien tai thoi diem compile time. Vi luc do compiler cua Java phai phan biet cac method signature
+    neu parameter hau nhu giong nhau thi dung Rest parameters/Varagrs. Rest parameters: Nhung phan con lai la 1 array cua cac data type giong nhau
+    Ex: int sum(int a, int b, ...numbers){logic return int}
+        void chuoi(String...chuoi){logic }
+* Method overriding:
+    xuat hien tai thoi diem run time. Khi object duoc tao ra
+
+* Constructor
+    + class field/global variable: se co default value. Ex: int = 0, String = null
+        cac method sinh ra la de xu li cac attribute cua object nay
+    + local variable trong Constructor khong co default value. Nen khi declare can phai init value
+        this.name = name : su dung value ma user nhap de dua cho object dung
+    + overloading cua Constructor: tao nhieu Constructor voi parameter khac nhau
+    + default Constructor: Neu khong tao Constructor thi vao thoi diem runtime jave compiler se tu sinh ra 1 default Constructor rong
+
+Day 7:
+* Concept Person
+    class Person has
+        attribute/class field: name, age
+        Constructor()
+        getter(): return ra value cua attribute (name, age)
+        setter(): dung de thay doi value cua attribute (name, age) ben trong 1 object
+
+    tao object/ doi tuong cu the
+        Person teo = new Person()
+            teo: reference type
+            new: keyword de tao 1 vung nho
+
+* MVC
+    Model: de design model can phai detect/xac dinh duoc cac attribute
+    View
+    Controler: noi xu ly model
+
+* Concept RobotCat
+    class RobotCat: supper class/ parent class
+    class BatteryRobotCat: sub-class/ child class/ concrete class
+
+    + Inheritance: khi mot class dung lai attribute va method cua 1 class khac
+        keyword: extends
+        access modifier: protected
+        usage: RobotCat meo = new BatteryRobotCat();
+        + Reuse ve mat logic cua supper class: su dung lai cac function
+        + Reuse ve mat design: su dung ki thuat overriding, dung de viet lai logic cua supper class
+            @Override: method signature giong nhau, khac nhau ve logic
+                keyword: super.method()/attribute
+
+    class Grandpa
+        level: concrete class finds&runs from local > Parent > Grandpa > Object
+
+Day 8:
+* Constructor cua sub-class: neu class Cha khong co Constructor default, thi sub-class phai tao Constructor goi Constructor cua Cha
+
+* Reuse design - Inheritance
+    + xuat hien moi quan he is a relationship
+    + co Controller de giai quyet ve mat design
+        Controller: noi de xu ly nhung loai du lieu thuoc ve model do minh tao ra
+            Syntax: Controller(is-a type), Controller(Cha)
+        void controllerMethod(List<Object Cha>){} //dung mindset functional programming
+    + Cha name = new Con() : Cha name: ten vung nho co kieu du lieu Cha; new Con(): tao vung nho kieu Con
+
+* static
+    Bai toan: Tao 1 danh sach chua nhieu con dog, moi lan tao 1 con dog se co stt tu tang. Vd dog 1, 2, 3, ...
+    Solution:
+        (1): static int dogID : class variable, duoc dung cho cho tat ca cac object duoc tao ra tu class/template nay | SHARED VALUE
+             public Dog(){ dogID++} : tao constructor, moi lan object dog moi duoc tao, dogID + 1
+        problem: moi lan object duoc tao ra, se thay doi class variable/ bien duoc dung chung cho tat ca object
+        (2): int dogID : attribute cua object, moi object sinh ra se mang attribute nay
+            public Dog(){ dogID++
+        problem: tao 2 object, ca 2 deu la dogID = 1
+    Khi nao dung static: khi muon dua vao 1 su thay doi chung, de thay doi cac object. Dung trong cac utility
+                         khi variable do khong thay doi, chi dung de refer. VD: locator
+    keyword static:
+        + static: class members la cac method, variable/attribute co keyword static.
+                  Se thuoc class level, duoc sinh ra truoc khi object duoc sinh ra
+                  khong can khoi tao object, van co the goi duoc class method, class variable. VD: Dog.id, Dog.find()
+        + non-static: cac method, attribute thuoc object level
+                  phai sinh ra object moi dung duoc. VD: Dog dog = new Dog(); dog.name || new Dog();
+
+* static block
+    override bien static/class variable, static thuoc class level => static variable dung chung cho tat ca cac object
+    override static method => NO. Khong the override, do static method thuoc ve class. Ma Override xuat hien tron ngu canh truc thuoc object
+
+Lab 8: (7.1, 7.2)
+    + Design: thiet ke model
+    + Xu ly: Viet logic cho Controller
+
+Day 9
+* Encapsulation:
+    Tac dung: la 1 ki thuat an object attribute/hiding object attribute, control object data. Khong cho user truc tiep access vao de thay doi attribute do.
+              viet cac logic de kiem soat data trong ham setter()
+    syntax: private, setter(){logic}, Constructor(){logic}
+    trien khai write-only, read-only
+        + write-only: la 1 ki thuat sau khi object duoc tao ra chi cho phep set/sua cac attribute, khong cho phep doc/get gia tri
+        + read-only: la 1 ki thuat sau khi object duoc tao ra chi cho phep get/doc cac attribute, khong cho phep set/sua gia tri
+
+* Design pattern
+    + La gi? Nhung y tuong de giai quyet van de. La nhung idea, design model de giai quyet bai toan
+    + Can dat  cau hoi cho 1 design pattern: Giai quyet van de gi?
+
+* Builder Design pattern
+    + Context: Bai toan xay nha - Nguoi chu nha muon thay doi cac attribute (color, mainDoors, topRoof,...) tuy y, moi nguoi chu nha lai muon thay doi nung cap attribute khac nhau
+               VD: thay doi color mainDoor, color topRoof, mainDoor, ... luc the nay luc the kia. Nguoi muon default, nguoi thi muon chinh sua
+    + Solution:
+        (1): tao nhieu loai Contructor() => problem: qua nhieu to hop, code dai dong, can rat nhieu overloading Contructor
+        (2): viet logic trong Contructor. VD if (color != null){setCollor},... => problem: khi co nhieu attribute can phai dua vao rat nhieu value
+             hoac cac gia tri default giong nhau thi nhap value cho param rat de bi nham lan va kho hieu
+        (3): tao Contructor() rong, sau do tao cac setter() cho attribute, khi nao can sua attribute nao thi goi setter() do
+             => OK. Nhung chua phai la immutable object
+                Inmmutable object: read-only. Object tao ra khong the sua doi
+                => Dung Builder Design Pattern
+    + Idea:
+        Doi Customer: lay hop dong, yeu cau dua cho doi Constructor. Dung ki thuat Inner Class
+            (Inner class: class chi co y nghia khi nam trong outer class)
+        Doi Constructor: thuc thi. Nhan vao ban hop dong
+    + Syntax:
+        attribute
+        //Constructor
+        protected House(Builder builder){
+            this.attribute = builder.attribute
+        }
+
+        //Read-only
+        getter()
+
+        //Inner class
+        public static class Builder(){  //Dung static de goi nhanh tu ben ngoai, giong nhu 1 class membergi
+        attribute
+        setter(){} //write-only
+        House builder(){return new House(this)}
+        }
+
+*Method chaining: Ki thuat viet method
+
+Day 10:
+* Break "is a" relationship
+    + Context: Bai toan tinh luong nhan vien. FTE, Contractor is a Employee voi cung cach tinh luong. Sau do co them nhieu loai
+     nhan vien khac co cach tinh luong khac vd Intern, Part-time.
+    + Solution:
+        (1): tao them logic trong Controller. VD: if(Employee instanceof FTE){} ...
+            Su dung CASTING de chuyen sang kieu FTE va lay method cua rieng FTE
+            Problem: be gay is a relationship, kho maintain code
+        (2): sua design o class Cha, them 1 ham return ve 0 or null, class Con se @Override method
+
+* Abstraction
+    + Khai niem: tao ra model o muc tong quat, chi tap trung vao cac dac diem thiet yeu. Tinh abstraction duoc thuc hien
+                 thong qua tao class Abstract, Interface
+    + Strongly force is a relationship. Bat buoc class Con phai viet method override
+    + Syntax: abstract method phai nam trong abstract class
+    + Khoi tao: AbstractClass ac = new ConcreteClass(){}
+
+* Example: Test trang login page
+
+Day 11:
+* Access modifier
+    public: service method | everywhere
+    protected: inheritance method | sub-class everywhere | non-sub-class same package, su dung everywhere thong qua controller
+    default: | same package
+    private: support method | inside class
+
+    + Purpose: Control access to the attribute, method
+
+* Polymorphism
+    + Khi 1 doi tuong co the chuyen doi giua rat nhieu trang thai trong cung 1 is a relationship/ An object can transit and take many different forms in is-a relationship
+
+* Road-map
+    > Cach Java run, compile. Tuong tac voi 8 loai du lieu (int, char, boolean)
+    > Logic giai quyet bai toan (if-else, loop)
+    > Collection data (ArrayList, Set, HashMap)
+    > Tu tao ra data hay con goi la reference data/ user defined class. Hieu duoc Class, Object
+    > Xuat hien ngu canh is-a relationship khi co inheritance. Xuat hien Controller
+    > Hieu duoc 4 concept cua OOP
+    has-a relationship
+    try-catch
+    doc file tu system
+
+* has-a relationship | Interface
+   + Context: is-a Human thi co the truy cap duoc cong dich vu Covid. >> duoc chuyen thanh: nhung loai vat has-a Gen thi co the truy cap
+   + Syntax:
+            by defaut: public abstract method()
+            sub-class: implements A, B, C, ...
+            Controller: Controller(has-a type), Controller(Interface)
+            non-abstract: khong ton tai
+            keyword static, default: chap nhan
+            variable: public static (by default)
+
+* Comparable
+    Include:
+    + Interface Comparable:
+                method: CompareTo()
+    + Controller:
+                sort(List<Comparable>)
+    Usage:
+    + Concrete class: implements Comparable, sau do @Override CompareTo(){logic return int}
+    + test: Collections.sort(Concrete class)
+
+Day 12:
+* Comparator
+  Include:
+    + Interface: Comparator
+                method: Compare(a1, o2)
+    + Controller: sort(List<Comparator)
+  Usage:
+    + Concrete class: implements Comparator, @Override Compare()
+    + test: Collections.sort(List<Comparator>)
+
+* Books: Head first design pattern, Clean code
+[PDF] book name, git hub
+
+* Strategy Design Pattern
+
+* Program/Chuong trinh | Controller on interface/abstraction, NOT implementations(details) sub-classes/concrete classes
+
+* Enum
+    Reference type. Noi giu cac reference data
+
+* Lab Racing Animal using Strategy Design Pattern
+
+Day 13
+* Handle Exception
+    What: Exception trong Java co 2 loai la Exceptions va Error duoc extends tu class Throwable. Error la nhung cai ma khong the handle duoc
+        tuc la khong the dung try catch duoc. Vi nhung loi lien quan den Error lien quan den phan cung cua may Virtual Machine, Assertion
+        VD: StackOverflow, OutOfMemory, Verify. Cai con loai la Exceptions, co 2 loai Checked & Unchecked muon handle thi se su dung
+        try-catch
+    Syntax:
+        try( code block)
+        catch(Exception e){} //catch tat ca cac Exception
+            + {} : ignore Error, don't print anything
+            + {e.printStackTrace}: print error
+            + {sout("[ERR] write an error") logic code}: customize error content
+            + {throw new IlligalArgumentException("[Err] message")}: throw a known error with a message
+        catch(ArithmeticException a): catch chinh xac loai loi Exception nao do
+        finally {code block} // always implement
+
+    What if: neu khong handle exception thi chuong trinh se bi crash, vi khong the thuc thi duoc dong lenh bi loi do
+
+    Mindset: Can phai handle Exception:
+        + khi thiet ke Controller, method: throw new Exceptiontype...
+        + khi su dung tu class, Controller cua nguoi khac: try {} catch(){}
+
+    Case handle:
+        + null
+        + empty
+        + connection error, fail -> retry or message
+        + bien moi truong, browser type, API tao data va xoa data -> throw new Exception...
+
+    Type of Exceptions:
+        + Checked exception: loi phat hien ngay tai thoi diem compile time. VD IO Exception, Interrupted, Remote. Noi thiet ke
+            class se throw ra 1 loai Exception, Java compiler se detect noi su dung phai handle/ try-catch
+        + Unchecked exception: la nhung loi xay ra o thoi diem runtime. VD Loi toan hoc/ Arithmetic, null pointer, Index out of bound
+            IllegalArgument
+
+* Simulate:
+    + Webdriver co abstract method bat buoc class con phai Override: initDriver(), closeDriver()
+    + ChromDriver, FixefoxDriver is a Webdriver, must implement 2 method above
+    + DriverFactory / Controller: viet logic tao method getWebDriver, dua vao parameter Browser type va return Webdriver tuong ung.
+
+Day 14
+https://www.techonthenet.com/sql/index.php
+* DataFactory
+    + create a method service class level: public static void readFile(String pathFile)
+        + sequence of logic: Source of file input stream (pathFile) ------ input ----- bufferedReader
+        + close session: bufferedReader -- input -- source
+    + create a method service class level, return List<Person>: convertDataIntoPerson
+
+* ReadFile:
+* Person class/entity
+    + Purpose: Read file -> return a list of user
+    + How to: lay data va chuyen nguoc sang thanh Object
+        + readFile from filePath (after reading will return String)
+        + xu ly String thu duoc: for each line slit String by ; -> String[]
+        + lay tung String dua vao bien name, age, salary
+        + Tao new Person(name, age, salary)
+        + add vao list : listPerson.add()
+
+* implicit casting/ upcasting
+    Ep kieu ngam dinh, goi phuong thuc cua lop con thong qua lop Cha. Ex: Dog is a Animal
+
+* WriteFile:
+    + Purpose: Save an Object into a file .txt
+    + How to:
+        + create a support method voi parameter(list Object can lay, filePath) : private void write(List<Person>, saveLocation)
+        + logic : for each person in list, get each attribute to save in each variable
+        + handle exception: list null, empty

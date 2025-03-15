@@ -1,5 +1,17 @@
 Lesson 1
+- Architecture:
+    + Moi browser se co 1 BrowserDriver de control Browser do. Doan Code duoc viet ra se gui den BrowserDriver thong qua
+      HTTP protocol theo chuan REST API format
+- Maven:
+    + la mot software project management, la mot build tool dung de quan ly dependency bang cach dua cac dependency vao POM file.
+    + add selenium repository
+- WebDriver Binding language
+    +
+- WebDriver
+    + Do cac Browser tao ra. VD: Chrome: ChromeDriver, FireFox: FireFoxDriver,...
+
 - Launch a browser
+
 Lesson 2
 - DriverFactory
     * purpose: can xay dung 1 method de su dung nhieu lan trong class FormInteraction
