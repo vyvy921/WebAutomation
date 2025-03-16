@@ -1,4 +1,7 @@
 -Dropdown options
+    Selenium support: <select></select>
+        Structure: <select>, <option value=index>, content/text
+
     Step 1: Xac dinh select locator & element
     Step 2: Goi class Select tu method support ui
     Step 3: Su dung strategy to find select
@@ -6,16 +9,24 @@
         - 2. Select by index
         - 3. Select by value
 
-- Customize select class
+- Customize Select class
     Create a class extend parent class
-    Create a constructor
+    Create a constructor follow parent
     Create a method(s)
 
 - iFrame
+    - How:
+        Step 1: Locate iFrame element.
+        Step 2: switch to iFrame
+        Step 3: Locate desired element and interact with it
+        Step 4: switch back to parent frame
     - Exception: no such element: Unable to locate element (do co 1 html document nam trong parent html document)
 
 
--Mouse hover
+- Mouse hover
+    Step 1: dung Action class tu Selenium
+    Step 2: locate elements by narrow down searching technique
+    Step 3: goi methods actions.moveToElement(elem).perform()
 
 - Narrow down searching
     C1: multiple matching

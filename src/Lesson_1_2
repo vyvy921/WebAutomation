@@ -67,5 +67,5 @@ Lesson 2
 - Refresh, go previous
     * usage: driver.navigate().refresh()
              driver.navigate().back()
-    * Exception: stale element reference: element is not attached to the page document
+    * Exception: stale element reference: means element is not attached to the page document
         => Solution: re-interact with the element again
